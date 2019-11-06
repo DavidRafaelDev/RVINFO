@@ -1,9 +1,7 @@
 <?php
-    //inicia a session
-    session_start();
     require_once 'usuario.php';
     $user = new usuario;
-
+    session_start();
     // Logar
     $LoginInvalido = false;
     if(isset($_POST['logar'])){
@@ -12,6 +10,7 @@
         $senha = $_POST['senha'];
         
         if(!empty($email) && !empty($senha)){
+            $_SESSION['user'] = new usuario();
             if($user->logar($email,$senha)){
                header("Location: home.php");
                exit;

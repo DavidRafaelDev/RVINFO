@@ -12,11 +12,13 @@
         session_destroy();
         header('Location: index.php');
     }
-    // Verifica se esta logado
+
+        // Verifica se esta logado
         if(!isset($_SESSION['user']) ){
         header("location: index.php");
         exit;
     }
+
 ?>
 
 <html lang="en">
@@ -48,12 +50,14 @@
             <a href="?sair=1">Deslogar</a>
         </div>
     </div>
+
     <!--Logo-->
      <div class="row">
          <div class="col-md-1 offset-md-4">
             <img class="img-logo" src="img/logo.png">
         </div>       
     </div>   
+    <!--Tabela-->
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <table class="table">
@@ -85,5 +89,6 @@
             </table>
         </div>       
     </div>
+    
 </body>
 </html>
