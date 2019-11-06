@@ -1,0 +1,18 @@
+body{
+    background-color:#f2ded6;
+}
+.btn-primary{
+    background-color:#D79251;
+}
+.thead{
+    background-color:#F7652C;
+}
+.img-logo{
+    height: 340px;
+    width: 380px;
+}
+.card{
+    border: 3px solid greenyellow;
+
+}
+
